@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        /* Body */
+        body {
+            width: 100%;
+            max-width: 1400px;
+            margin: auto;
+            min-height: 100vh;
+            background: #191919;
+            font-family: sans-serif;
+            color: #fff;
+        }
+        /* Navbar */ 
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    background: #1a1a1a;
+}
+
+.link-group {
+    list-style: none;
+    display: flex;
+}
+
+.link a {
+    color: #fff;
+    opacity: 0.5;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    margin: 0 20px;
+    line-height: 80px;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.link a:hover, .link.active a {
+    opacity: 1;
+}
+
+        /* Contact Info Heading */
+        .contact-info-heading {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 36px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .contact-section {
+            padding: 50px 150px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 50px;
+            margin-top: 20px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            height: 40px;
+            background: rgba(143, 209, 177, 0.2);
+            border: 1px solid #fffdfd;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            text-transform: capitalize;
+            color: #f5ecec;
+            padding: 5px 10px;
+        }
+
+        ::placeholder {
+            color: #f6f5fc;
+        }
+
+        #msg {
+            height: 280px;
+            resize: none;
+            font-family: sans-serif;
+        }
+
+        .form-submit-btn {
+            background: #ea6a6a;
+            color: #ecf1eb;
+            text-transform: capitalize;
+            padding: 15px 40px;
+            display: block;
+            margin: auto;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .map {
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            border: 2px solid #61a075;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+        }   
+
+      </style>
+      
+
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar">
+    <ul class="link-group">
+        <li class="link active"><a href=".index.html">Home</a></li>
+        <li class="link "><a href="mailto:ichha2111@gmail.com" style="color: #fff;">Mail</a></li>
+        <li class="link"><a href="https://www.linkedin.com/in/ichha-kumari">LinkedIn</a></li>
+        <li class="link"><a href="https://github.com/ichhakumari/" target=_self>GitHub</a></li>
+    </ul>
+</nav>
+   
+    <!-- Contact Info Heading -->
+    <h2 class="contact-info-heading">Contact Information</h2>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <form class="contact-form">
+            <input type="text" name="name" id="name" autocomplete="off" placeholder="Name">
+            <input type="text" name="email" id="email" autocomplete="off" placeholder="Email">
+            <textarea name="msg" id="msg" placeholder="Message" autocomplete="off"></textarea>
+            <button type="submit" class="form-submit-btn">Contact</button>
+        </form>
+        <!-- Map -->
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448181.163742937!2d76.81306771991275!3d28.647279935262464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1639489002410!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+</body>
+</html>

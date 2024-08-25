@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="contact.html">
+    <link rel="contact" href="contact.html">
+    
+    <style>
+body {
+            width: 100%;
+            max-width: 1400px;
+            display: block;
+            margin: auto;
+            min-height: 100vh;
+            background: #191919;
+            font-family: sans-serif;
+        }
+        
+        /* Navbar */
+        .navbar {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 8;
+            background: #1a1a1a;
+        }
+
+        .link-group {
+            list-style: none;
+            display: flex;
+        }
+
+        .link a {
+            color: #fff;
+            opacity: 0.5;
+            text-decoration: none;
+            text-transform: capitalize;
+            padding: 10px 30px;
+            margin: 0 20px;
+            line-height: 80px;
+            transition: 0.5s;
+            font-size: 20px;
+        }
+
+        .link a:hover, .link.active a {
+            opacity: 1;
+        }
+
+        /* About Section */
+        .about-section {
+            margin-top: 80px; /* Adjust margin-top to account for fixed navbar */
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .about-text {
+            flex: 1;
+            padding: 20px;
+            color: #f4f5f6;
+        }
+
+        .about-image {
+            flex: 1;
+            padding: 20px;
+            /* background: url('D:\Project\Portfolio\potfolio\mypic.jpg') no-repeat center center; */
+            background-size: cover;
+            height: 40%;
+            width: 50%;
+        }
+
+        .about-section h1 {
+            color: #097ef4;
+        }
+        .about-section p{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 25px;
+        }
+        .about-section h2 {
+            text-align: center;
+            color: #08e4f0;
+            font-size: 35px;
+        }
+        .thanks h2{
+            text-align: center;
+            font-family: jokerman;
+            color: #09f4e4;
+        }
+        .footer {
+            background-color: #0d0404;
+            color: #f4eded;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul class="link-group">
+            <li class="link active"><a href="index.html">Home</a></li>
+            <li class="link"><a href="about.html">About</a></li>
+            <li class="link"><a href="contact.html">Contact</a></li>
+            <li class="link"><a href="https://www.linkedin.com/in/ichha-kumari">LinkedIn</a></li>
+            <li class="link"><a href="https://github.com/ichhakumari/" target="_self">GitHub</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about-text">
+            <h1>About Me</h1>
+             <h2>Hello....😁</h2>
+              <p>  I’m Ichha Kumari,<br> currently pursuing a B.Tech in Artificial Intelligence and Data Science from Vivekananda Institute of Professional Studies-TC in Delhi, where I live with my parents.
+                </p>
+                <p> I completed my diploma in Computer Science from Kasturba Institute of Technology with first division and distinction and graduated from Rani Jhansi SKV in New Delhi with my 10th grade.</p>
+            
+                <p>I’m passionate about applying my technical skills to real-world problems and aim to secure a well-reputed job in the tech field. </p>
+            
+            <p>I have experience working on several projects, which are detailed in the project section of my profile, and possess strong knowledge in computer science fundamentals, AI, and ML.</p>
+            
+            <p>I thrive in team environments and have consistently led my team in group projects during college. 
+            </p> 
+            <p>My friendly nature helps me get along easily with others, while my punctuality and discipline ensure that I complete my tasks efficiently. I’m eager to leverage my skills and knowledge to contribute effectively in the tech industry and learn more about practical work applications.</p>
+        </div>
+        <div class="about-image">
+            <img src="mypic.jpg" class="home-img" alt="ichha">
+        </div>
+    </section>
+    <section class="thanks">
+        <div>
+            <h2> Thank you for your time.⌛ <br>
+                I look forward to hearing from you. <br>
+                Have a nice day ahead! :-)</h2>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="footer text-center py-4 bg-dark">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+
+   </body>
+</html>
